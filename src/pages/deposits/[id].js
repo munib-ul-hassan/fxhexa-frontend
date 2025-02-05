@@ -43,10 +43,10 @@ const Withdraw = () => {
   console.log(bankItems, "bankItems");
 
   const payment_options = [
-    {
-      value: "perfect",
-      label: "Perfect Money",
-    },
+    // {
+    //   value: "perfect",
+    //   label: "Perfect Money",
+    // },
     {
       value: "bank",
       label: "Pakistan Local Bank Transfer",
@@ -56,10 +56,10 @@ const Withdraw = () => {
       label: "Bitcoin",
     },
 
-    {
-      value: "USDT",
-      label: "USDT",
-    },
+    // {
+    //   value: "USDT",
+    //   label: "USDT",
+    // },
   ];
   console.log(payments, "paymentsData");
   // router

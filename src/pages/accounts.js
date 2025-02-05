@@ -18,9 +18,9 @@ const Accounts = () => {
   const [realAccounts, setrealAccounts] = useState([]);
   const [demoAccounts, setdemoAccounts] = useState([]);
   const userData = useSelector((state) => state.userReducer.user);
-  const subUser = useSelector((state) => state?.subUserReducer?.subUser);
+  // const subUser = useSelector((state) => state?.subUserReducer?.subUser);
   const [activeAccount, setActiveAccount] = useState([]);
-  const [modalCount, setmodalCount] = useState(0);
+  // const [modalCount, setmodalCount] = useState(0);
 
   //config
   const config = {
@@ -176,12 +176,12 @@ const Accounts = () => {
                       <ButtonWithIcon
                         name={"Deposit"}
                         icon={`/downloads.png`}
-                        onClick={() => router.replace(`/withdraw/withdraw`)}
+                        onClick={() => router.replace(`/withdraw/withdraw?from=deposit`)}
                       />
                       <ButtonWithIcon
                         name={"Withdraw"}
                         icon={`/upload.png`}
-                        onClick={() => router.replace(`/withdraw/withdraw`)}
+                        onClick={() => router.replace(`/withdraw/withdraw?from=withdraw`)}
                       />
                       <ButtonWithIcon
                         onClick={() => _handleTrade(item)}

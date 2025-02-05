@@ -84,7 +84,7 @@ const AdminLogin = () => {
         <div className="bg-[#f69320] flex space-x-2 items-center justify-center py-3 w-full mt-5">
           <Image src={"/lock.png"} alt="Lock Image" width={20} height={20} />
           <p className="text-slate-800 text-xs font-medium font-montserrat">
-            URL verification: https://accounts.fxhexa.com
+            URL verification: https://accounts.vinzex.com
           </p>
         </div>
 

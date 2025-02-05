@@ -28,7 +28,10 @@ export default function Sidebar({ sidebar, setSideBar }) {
   const [isStock, setisStock] = useState(true);
   const [isHoveredStock, setIsHoveredStock] = useState(true);
 
-  const [allData, setAllData] = useState([]);
+  const [allData, setAllData] = useState(
+      {forex:[],metals:[],oil:[],stock:[]}
+
+    );
   const [StockData, setStockData] = useState([
     { label: "IBM", value: "NYSE:IBM", ticket: "IBM" },
     { label: "APPLE", value: "NASDAQ:AAPL", ticket: "AAPL" },
@@ -271,7 +274,7 @@ export default function Sidebar({ sidebar, setSideBar }) {
             onClick={() => router.replace(`/forex/AUD-JPY`)}
             className="w-full   cursor-pointer mb-1"
           >
-            <img src={"/logoNew.png"} className="h-full  w-full" />
+            <img src={"/newfx.png"} className="h-full  w-full" />
           </div>
           <SocketComponent />
           <p className="text-gray-100 text-lg text-center font-montserrat font-semibold uppercase">

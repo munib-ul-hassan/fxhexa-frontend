@@ -5,14 +5,18 @@ import Environment from "@/constants/apiEndPoints";
 import { useSelector } from "react-redux";
 import { useRouter } from "next/router";
 import Swal from "sweetalert2";
+import { useSearchParams } from "next/navigation";
 
 const Withdraw = () => {
   // state
+  const searchParams = useSearchParams();
+  const from = searchParams.get("from"); // Get the "from" query param
+
   const [allTransactions, setallTransactions] = useState([]);
   const [allReferralTransactions, setReferralAllTransactions] = useState([]);
   const subUser = useSelector((state) => state?.subUserReducer?.subUser);
   const user = useSelector((state) => state.userReducer);
-  const [selection, setselection] = useState(true);
+  const [selection, setselection] = useState();
   const [allDeposits, setallDeposits] = useState([]);
 
   // router
@@ -94,6 +98,11 @@ const Withdraw = () => {
   };
 
   useEffect(() => {
+    if(from=="withdraw"){
+      setselection(true)
+    }else{
+      setselection(false)
+    }
     if (Object.keys(subUser)?.length == 0) {
       Swal.fire({
         title: "Not Logged In as SubUser",
@@ -112,7 +121,6 @@ const Withdraw = () => {
     getAllReferrals();
   }, []);
 
-  console.log("allTransactions", allTransactions);
 
   return (
     <div className="px-8 py-4 min-h-screen relative bg-white dark:bg-gray-800">

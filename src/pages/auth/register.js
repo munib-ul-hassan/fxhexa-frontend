@@ -13,7 +13,7 @@ const Register = () => {
         <div className=" w-full flex flex-col sm:flex-row justify-center items-center px-4 sm:px-28 space-x-0 sm:space-x-20">
           <div className="w-full sm:w-4/12 ">
             <p className="text-gray-500 dark:text-gray-300  text-2xl sm:text-3xl  font-semibold font-montserrat  mb-10">
-              Welcome to FXHEXA!
+              Welcome to vinzex!
             </p>
 
             {/* Next Button */}

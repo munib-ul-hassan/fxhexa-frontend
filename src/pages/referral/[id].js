@@ -41,10 +41,10 @@ const Referral = () => {
   };
 
   const payment_options = [
-    {
-      value: "perfect",
-      label: "Perfect Money",
-    },
+    // {
+    //   value: "perfect",
+    //   label: "Perfect Money",
+    // },
     {
       value: "bank",
       label: "Pakistan Local Bank Transfer",
@@ -54,10 +54,10 @@ const Referral = () => {
       label: "Bitcoin",
     },
 
-    {
-      value: "USDT",
-      label: "USDT",
-    },
+    // {
+    //   value: "USDT",
+    //   label: "USDT",
+    // },
   ];
 
   // handle Image

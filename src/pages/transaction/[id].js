@@ -17,10 +17,10 @@ import SmallLoader from "@/components/SmallLoader";
 
 const Deposits = () => {
   const payment_options = [
-    {
-      value: "perfect",
-      label: "Perfect Money",
-    },
+    // {
+    //   value: "perfect",
+    //   label: "Perfect Money",
+    // },
     {
       value: "bank",
       label: "Pakistan Local Bank Transfer",
@@ -30,10 +30,10 @@ const Deposits = () => {
       label: "Bitcoin",
     },
 
-    {
-      value: "USDT",
-      label: "USDT",
-    },
+    // {
+    //   value: "USDT",
+    //   label: "USDT",
+    // },
   ];
 
   // router
